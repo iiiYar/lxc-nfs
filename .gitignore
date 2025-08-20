@@ -1,0 +1,49 @@
+# Configuration files with sensitive data
+config.conf
+*.conf
+.env
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# SSH keys
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Package manager files
+*.deb
+*.rpm
+*.tar.gz
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Compiled files
+*.o
+*.so
+*.dll
+*.exe
+
+# User-specific files
+install.log
+setup.log

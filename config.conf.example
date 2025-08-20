@@ -1,0 +1,33 @@
+# Discord Configuration
+# Get your webhook URL from Discord: Server Settings > Integrations > Webhooks
+DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN"
+
+# Proxmox Configuration
+# Your Proxmox server details
+PROXMOX_HOST="192.168.1.100"
+PROXMOX_USER="root"
+PROXMOX_PASSWORD="your_secure_password_here"
+
+# VM Configuration
+# The VM ID you want to manage (check in Proxmox web interface)
+VM_ID="100"
+VM_WAIT_TIME="20"  # seconds to wait after VM start
+
+# LXC Configuration
+# The LXC container ID you want to manage
+LXC_ID="109"
+LXC_WAIT_TIME="10"  # seconds to wait after LXC operations
+
+# NFS Configuration
+# Your NFS server IP address
+NFS_SERVER="192.168.1.200"
+# Format: "source_path:mount_point"
+NFS_PATHS=(
+    "/mnt/storage/media:/mnt/media"
+    "/mnt/storage/documents:/mnt/docs"
+    "/mnt/storage/backups:/mnt/backups"
+)
+
+# Optional: SSH Key Authentication
+# Uncomment and set if you want to use SSH keys instead of passwords
+# SSH_KEY_PATH="/home/user/.ssh/proxmox_rsa"
